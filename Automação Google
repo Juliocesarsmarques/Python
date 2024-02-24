@@ -1,0 +1,10 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.chrome()
+driver.get( "https://www.google.com")
+
+caixa _pesquisa = drive.find_element("id","APjFqb")
+caixa_pesquisa.send_keys("dólar hoje")
+
+caixa_pesquisa.send_keys(keys.RETURN)
