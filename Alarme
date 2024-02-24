@@ -1,0 +1,12 @@
+import time
+
+hours = int(input('how many hours until our alarm?\n'))
+minutes = int(input('how many minutes?\n'))
+secondes = in(input('how many seconds?'))
+
+hours = hours * 6000
+minutes = minutes * 60
+
+total_time = hours + minutes + secondes
+time.sleep(total_time)
+print('Time up!")
