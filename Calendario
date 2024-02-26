@@ -1,0 +1,6 @@
+import calendar 
+yy = 2012 # year
+mm = 12 # month
+# diplay the calendar
+print(canlendar.month(yy,mm))
+
