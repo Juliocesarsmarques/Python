@@ -1,0 +1,23 @@
+From imbox import imbox
+
+mail = imbox("imap.gmail.com", username=username, password=password
+messages = mail.messages(date__gt=dt, raw='has:attachment')
+
+// Resultado
+from datetime import
+messages
+Mesages(date__gt=2024-01-22 15:33:59.391014
+raw=has:attachment)
+
+//buscar lista de e-mails
+for (uid,message) in messages:
+  message.sent_from
+  message.sent_to
+  message.attachments
+
+// Baixar os e-mail que tenha anexo
+for (uid,message) in messages:
+  for attach in message.attachments:
+    if "pdf" in attach ["filename"]:
+        with open""arquivos/" + attach["filename"], "wb" as fp:
+            fp.writ(attach.get("content").read())
