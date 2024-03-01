@@ -1,0 +1,13 @@
+pip install ip2geotools
+
+import socket
+from ip2ggeotools.database.noncommercial import DbIpCity
+
+url = input ("inserir a URL: ")
+ip = socket.geothostbyname(url)
+response = DbIpCity.get(ip, api_key="free")
+
+Print(f"IP: {ip}")
+Print(f"IP: {response.city}")
+Print(f"IP: {response.region}")
+Print(f"IP: {response.country}")
