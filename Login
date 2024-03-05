@@ -1,0 +1,34 @@
+import flet as ft
+
+def mais(page: ft.Page):
+  # configuração da pagina
+    page.title = ' Login Screen'
+    page.window_width = 600
+    pagewindow_heigth = 600
+    page.window_resizable = false
+    page.theme_mode = 'dark'
+    page.vertical_alignmnt = ft.mainAxisAligment.center
+função chamada quando o boltao é clicado
+  def btn_click(e):
+
+  #verifica se ambos o campos de entrada (nome e senha) estão preenchidos
+    if all([name_input.value,  pass_input.vale))
+        dlg = ft.AlertDialog(
+                title=ft.Text('Bem vindo + name_input.value))
+      page.dialog = dlg
+      dlg.open = true
+page.update ()
+
+#compoentes da interface do usuário
+  page.appbar = ft.AppBar(title=ft.tex('Login Screen'), center_title=true
+  name_input = ft.TextFilde(
+            label ='Nome', autofocus=true, hint_text='Digite seu nome')
+pass_input = ft.TextField(
+          label= 'Senha', password=true, can_reveal_pasword=true)
+  submit_btn = ft.ElevateButton(
+          text='Enviar', width=600, on_click=btn_click)
+page.update()
+page.add(name_input,pass_input,submit_btn)
+
+ft.app(target=main)
+
