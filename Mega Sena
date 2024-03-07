@@ -2,3 +2,4 @@ import random
 
 MegaSena = randow.sample(range(1,61),6)
 
+Print(MegaSena)
